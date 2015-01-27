@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<h1>Contact Us</h1>
+		<fieldset>
+			<div>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" placeholder="Name" required>
+			</div>
+			<div>
+			<label for="last_name">Last Name:</label>
+			<input type="text" name="last_name" id="last_name" placeholder="Last name">
+			</div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="Email" required>
+			</div>
+			<div>
+			<label for="age">Age:</label>
+			<input type="number" name="age" id="age" placeholder="Age" min="0" max="100">	
+			</div>
+			<div>
+			<label for="website">Website:</label>			
+			<input type="url" name="website" id="website" placeholder="Website" required>
+			</div>
+			<div>	
+			<label for="message">Message:</label>
+			<textarea name="message" id="message"></textarea>
+			</div>
+
+		</fieldset>
+		<fieldset>
+			<legend>Card details</legend>
+			<fieldset>
+				<legend>Card type</legend>
+
+				<label class="cards" for="visa">VISA</label>
+				<input type="radio" name="card" id="visa">
+
+				<label class="cards" for="mastercard">Mastercard</label>
+				<input type="radio" name="card" id="mastercard">
+
+				<label class="cards" for="amex">AMEX</label>
+				<input type="radio" name="card" id="amex">
+
+			</fieldset>
+
+			<div>
+			<label for="namec">Name:</label>
+			<input type="text" name="namec" id="namec" placeholder="Name" required>
+			</div>
+			<div>
+			<label for="card_number">Card number:</label>
+			<input type="number" name="name" id="name" required>
+			</div>
+			<div>
+			<label for="code">Security code:</label>
+			<input type="number" name="code" id="code" required placeholder="xxxx" patter="[0-9{3}]">
+			</div>
+			<div>
+			<label for="time">Expiry date:</label>
+			<input type="month" name="time" id="time">
+			</div>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</fieldset>
+	
+
+
+
+	</form>
+
+</body>
+</html>
